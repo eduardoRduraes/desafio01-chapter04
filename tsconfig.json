@@ -4,13 +4,11 @@
     "module": "commonjs",
     "strict": true,
     "strictPropertyInitialization": false,
-    "paths":{},
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src/**/*.ts", "src/modules/statements/useCases/getBalance/GetBalanceUseCase.spec.ts"]
+  }
 }
