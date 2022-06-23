@@ -6,6 +6,7 @@ import { IGetBalanceDTO } from "../useCases/getBalance/IGetBalanceDTO";
 import { IGetStatementOperationDTO } from "../useCases/getStatementOperation/IGetStatementOperationDTO";
 import { IStatementsRepository } from "./IStatementsRepository";
 
+
 export class StatementsRepository implements IStatementsRepository {
   private repository: Repository<Statement>;
 

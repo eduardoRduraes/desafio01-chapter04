@@ -4,6 +4,7 @@ import { IGetBalanceDTO } from "../../useCases/getBalance/IGetBalanceDTO";
 import { IGetStatementOperationDTO } from "../../useCases/getStatementOperation/IGetStatementOperationDTO";
 import { IStatementsRepository } from "../IStatementsRepository";
 
+
 export class InMemoryStatementsRepository implements IStatementsRepository {
   private statements: Statement[] = [];
 

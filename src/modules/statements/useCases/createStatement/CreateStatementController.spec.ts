@@ -4,7 +4,7 @@ import request from "supertest"
 import { v4 as uuidV4 } from "uuid"
 import { app } from "../../../../app"
 
-describe("Create statement", () => {
+describe("CreateStatementController", () => {
   let connection: Connection
   let user_id: string
   beforeAll(async () => {
@@ -80,8 +80,7 @@ describe("Create statement", () => {
       description: "Withdraw",
       amount: 250
     })
-    const statement = await connection.query('select * from statements')
-    console.log(response.status, response.body)
+    await connection.query('select * from statements')
 
     expect(response.status).toBe(400)
     expect(response.body.message).toBe("Insufficient funds")
